@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SSOPage {
+public class SSOPage extends BasePage {
+
+    private static SSOPage ssoPage;
 
     @FindBy(xpath = "(//*[@class='btn dropdown-toggle selectpicker btn-default'])[4]")
     private WebElement environmentDropDown;
@@ -44,11 +46,17 @@ public class SSOPage {
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     private WebElement goButton;
 
-    public SSOPage(WebDriver driver){
-        PageFactory.initElements(driver, this);
+    private SSOPage(){
     }
 
-    public void loadSSOConfiguration() {
+    public static SSOPage getInstance(){
+        if(ssoPage == null){
+            ssoPage = new SSOPage();
+        }
+        return ssoPage;
+    }
+
+    public HomePage loadSSOConfiguration() {
         environmentDropDown.click();
         environment.click();
         clientDropDown.click();
@@ -61,5 +69,6 @@ public class SSOPage {
         culture.click();
         pointBalanceTextBox.sendKeys("600000");
         goButton.click();
+        return PageFactoryProvider.getHomePage();
     }
 }

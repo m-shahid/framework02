@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+public class HomePage extends BasePage{
+
+    private static HomePage homePage;
+
     @FindBy(css = "#search-hotel-button")
     WebElement hotelSearchNavButton;
 
@@ -31,11 +34,17 @@ public class HomePage {
     @FindBy(css = "#hotelSearchButton")
     WebElement hotelSearchButton;
 
-    public HomePage(WebDriver driver){
-        PageFactory.initElements(driver, this);
+    private HomePage(){
     }
 
-    public void searchHotel() {
+    public static HomePage getInstance(){
+        if(homePage == null){
+            homePage = new HomePage();
+        }
+        return homePage;
+    }
+
+    public HotelSearchResultPage searchHotel() {
         hotelSearchNavButton.click();
         destinationTextBox.sendKeys("LAS");
         destinationLocation.click();
@@ -44,5 +53,6 @@ public class HomePage {
         checkOutDateInputBox.click();
         checkOutDate.click();
         hotelSearchButton.click();
+        return PageFactoryProvider.getHotelSearchResultPage();
     }
 }

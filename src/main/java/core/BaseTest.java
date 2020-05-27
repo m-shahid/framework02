@@ -1,5 +1,7 @@
 package core;
 
+import driver.DriverFactory;
+import driver.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,21 +12,17 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    public static WebDriver driver;
-
     @BeforeSuite
     public void setup(){
-        String currentUserDirectory = System.getProperty("user.dir");
-        System.setProperty("webdriver.chrome.driver", currentUserDirectory + "\\src\\test\\resources\\drivers\\chromedriver.exe");
-        driver = new ChromeDriver();
-        //wait = new WebDriverWait(driver, 10);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get("http://cltsenvironments.loyaltytravelservices.com/SSOSimulator/");
+        WebDriver driver = DriverFactory.createInstance("chrome", "local");
+        DriverManager.setDriver(driver);
+        DriverManager.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        DriverManager.getDriver().manage().window().maximize();
+        DriverManager.getDriver().get("http://cltsenvironments.loyaltytravelservices.com/SSOSimulator/");
     }
 
     @AfterSuite
     public void cleanup(){
-        driver.close();
+        DriverManager.close();
     }
 }
