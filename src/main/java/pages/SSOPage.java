@@ -1,14 +1,9 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 public class SSOPage extends BasePage {
-
-    private static SSOPage ssoPage;
 
     @FindBy(xpath = "(//*[@class='btn dropdown-toggle selectpicker btn-default'])[4]")
     private WebElement environmentDropDown;
@@ -46,29 +41,54 @@ public class SSOPage extends BasePage {
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     private WebElement goButton;
 
-    private SSOPage(){
-    }
-
-    public static SSOPage getInstance(){
-        if(ssoPage == null){
-            ssoPage = new SSOPage();
-        }
-        return ssoPage;
-    }
-
     public HomePage loadSSOConfiguration() {
-        environmentDropDown.click();
-        environment.click();
-        clientDropDown.click();
-        client.click();
-        programDropDown.click();
-        program.click();
-        sitesDropDown.click();
-        site.click();
-        cultureDropDown.click();
-        culture.click();
-        pointBalanceTextBox.sendKeys("600000");
-        goButton.click();
+        return selectEnvironment()
+                .selectClient()
+                .selectProgram()
+                .selectSite()
+                .selectCulture()
+                .typePointBalance("600000")
+                .submit();
+    }
+
+    public SSOPage selectEnvironment(){
+        act.click(environmentDropDown);
+        act.click(environment);
+        return this;
+    }
+
+    public SSOPage selectClient(){
+        act.click(clientDropDown);
+        act.click(client);
+        return this;
+    }
+
+    public SSOPage selectProgram(){
+        act.click(programDropDown);
+        act.click(program);
+        return this;
+    }
+
+    public SSOPage selectSite(){
+        act.click(sitesDropDown);
+        act.click(site);
+        return this;
+    }
+
+    public SSOPage selectCulture(){
+        act.click(cultureDropDown);
+        act.click(culture);
+        return this;
+    }
+
+    public SSOPage typePointBalance(String pointBalanceValue){
+        act.type(pointBalanceTextBox, pointBalanceValue);
+        act.click(culture);
+        return this;
+    }
+
+    public HomePage submit(){
+        act.click(goButton);
         return PageFactoryProvider.getHomePage();
     }
 }

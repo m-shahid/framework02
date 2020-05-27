@@ -1,14 +1,9 @@
 package pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends BasePage{
-
-    private static HomePage homePage;
+public class HomePage extends BasePage {
 
     @FindBy(css = "#search-hotel-button")
     WebElement hotelSearchNavButton;
@@ -34,25 +29,47 @@ public class HomePage extends BasePage{
     @FindBy(css = "#hotelSearchButton")
     WebElement hotelSearchButton;
 
-    private HomePage(){
+    public HomePage navigateToHotel() {
+        act.click(hotelSearchNavButton);
+        return this;
     }
 
-    public static HomePage getInstance(){
-        if(homePage == null){
-            homePage = new HomePage();
-        }
-        return homePage;
+    public HomePage typeDestination() {
+        act.type(destinationTextBox, "LAS");
+        return this;
+    }
+
+    public HomePage selectDestination() {
+        act.click(destinationLocation);
+        return this;
+    }
+
+
+    public HomePage selectCheckInDate() {
+        act.click(checkInDateInputBox);
+        act.click(checkInDate);
+        return this;
+    }
+
+    public HomePage selectCheckOutDate() {
+        act.click(checkOutDateInputBox);
+        act.click(checkOutDate);
+        return this;
+    }
+
+    public HotelSearchResultPage clickOnHotelSearchButton() {
+        act.click(hotelSearchButton);
+        return PageFactoryProvider.getHotelSearchResultPage();
     }
 
     public HotelSearchResultPage searchHotel() {
-        hotelSearchNavButton.click();
-        destinationTextBox.sendKeys("LAS");
-        destinationLocation.click();
-        checkInDateInputBox.click();
-        checkInDate.click();
-        checkOutDateInputBox.click();
-        checkOutDate.click();
-        hotelSearchButton.click();
-        return PageFactoryProvider.getHotelSearchResultPage();
+
+        return navigateToHotel()
+                .typeDestination()
+                .selectDestination()
+                .selectCheckInDate()
+                .selectCheckOutDate()
+                .clickOnHotelSearchButton();
     }
+
 }
