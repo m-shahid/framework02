@@ -6,21 +6,23 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 public class ActionPageHelper {
 
     private WebDriver driver;
     private WebDriverWait wait;
 
-    public ActionPageHelper(WebDriver driver){
+    public ActionPageHelper(WebDriver driver, WebDriverWait wait){
         this.driver = driver;
-        wait = new WebDriverWait(this.driver, 20);
+        this.wait = wait;
     }
 
     public void click(WebElement element){
         try{
             element.click();
         }catch(Exception e){
-            System.out.println("Exception occurred while clicking on element");
+            throw new ElementException(e.getMessage());
         }
     }
 
@@ -28,7 +30,7 @@ public class ActionPageHelper {
         try{
             element.sendKeys(text);
         }catch(Exception e){
-            System.out.println("Exception occurred while typing text");
+            throw new ElementException(e.getMessage());
         }
     }
 
@@ -36,7 +38,23 @@ public class ActionPageHelper {
         try{
             wait.until(ExpectedConditions.presenceOfElementLocated(locator));
         }catch(Exception e){
-            System.out.println("Exception occurred while waiting for element to be present");
+            throw new ElementException(e.getMessage());
+        }
+    }
+
+    public void waitForAllElementsToBeVisible(List<WebElement> elements){
+        try{
+            wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+        }catch(Exception e){
+            throw new ElementException(e.getMessage());
+        }
+    }
+
+    public void sleep(int timeoutInMilliSecond){
+        try{
+            Thread.sleep(timeoutInMilliSecond);
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 }

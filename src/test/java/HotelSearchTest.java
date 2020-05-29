@@ -8,8 +8,8 @@ public class HotelSearchTest extends BaseTest {
     public void HotelSearchForLASLocationTest(){
 
         PageFactoryProvider.getSSOPage()
-                .loadSSOConfiguration()
-                .searchHotel()
+                .loadSSOConfiguration("SG", "ORXeC Demo", "1371", "BaseResponsive", "English (United States)", "60000")
+                .searchHotel("LAS", 90, 2)
                 .isAtHotelSearchResultPage();
     }
 }

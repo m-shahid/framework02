@@ -1,5 +1,6 @@
 package driver;
 
+import config.ConfigurationManager;
 import org.openqa.selenium.WebDriver;
 
 public class DriverFactory {
@@ -10,7 +11,9 @@ public class DriverFactory {
 
     }
 
-    public static WebDriver createInstance(String browserName, String target){
+    public static WebDriver createInstance(String browserName){
+
+        String target = ConfigurationManager.getAppConfig().getTarget();
 
         if(driver != null)
             return driver;
@@ -20,10 +23,9 @@ public class DriverFactory {
                 driver = new LocalDriver().createInstance(browserName);
                 break;
 
-            /*TODO Need to implement RemoteDriver*/
-//            case "grid":
-//                driver = new RemoteDriver().createInstance(browserName);
-//                break;
+            case "remote":
+                driver = new RemoteDriver().createInstance(browserName);
+                break;
         }
         return driver;
     }
