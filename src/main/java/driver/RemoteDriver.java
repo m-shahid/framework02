@@ -2,6 +2,8 @@ package driver;
 
 import config.ConfigurationManager;
 import config.IConfiguration;
+import helper.ElementException;
+import logger.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -18,7 +20,7 @@ public class RemoteDriver implements IDriver {
             String gridUrl = String.format("http://%s:%s/wd/hub", configuration.getGridUrl(), configuration.getGridPort());
             driver = new RemoteWebDriver(new URL(gridUrl), getCapabilities(browser));
         }catch(Exception e){
-            e.printStackTrace();
+            throw new ElementException(e.getMessage());
         }
         return driver;
     }
@@ -27,9 +29,11 @@ public class RemoteDriver implements IDriver {
 
         switch (browser.toLowerCase()){
             case "chrome":
+                Logger.info("Creating remote chrome driver");
                 return DesiredCapabilities.chrome();
 
             case "firefox":
+                Logger.info("Creating remote firefox driver");
                 return DesiredCapabilities.firefox();
         }
         return null;

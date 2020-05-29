@@ -1,5 +1,6 @@
 package pages;
 
+import logger.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
@@ -44,16 +45,19 @@ public class HomePage extends BasePage {
 
     public HomePage navigateToHotel() {
         act.click(hotelSearchNavButton);
+        Logger.info("User has navigated to hotel search page.");
         return this;
     }
 
     public HomePage typeDestination(String destination) {
         act.type(destinationTextBox, destination);
+        Logger.info("User has entered "+ destination +" destination.");
         return this;
     }
 
     public HomePage selectDestination() {
         act.click(destinationLocation);
+        Logger.info("User has selected first destination from dropdown.");
         return this;
     }
 
@@ -63,7 +67,9 @@ public class HomePage extends BasePage {
         String expectedCheckInDate = getDate(daysFromToday);
         String expectedCheckOutDate = getDate(daysFromToday + duration);
         selectCalenderDate(expectedCheckInDate);
+        Logger.info("User has selected check in date as : " + expectedCheckInDate);
         selectCalenderDate(expectedCheckOutDate);
+        Logger.info("User has selected check out date as : " + expectedCheckOutDate);
         //act.click(checkInDate);
         return this;
     }
@@ -99,14 +105,9 @@ public class HomePage extends BasePage {
         return date;
     }
 
-    public HomePage selectCheckOutDate() {
-        act.click(checkOutDateInputBox);
-        act.click(checkOutDate);
-        return this;
-    }
-
     public HotelSearchResultPage clickOnHotelSearchButton() {
         act.click(hotelSearchButton);
+        Logger.info("User has clicked on hotel search button.");
         return PageFactoryProvider.getHotelSearchResultPage();
     }
 

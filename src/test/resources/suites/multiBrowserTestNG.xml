@@ -1,12 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Multi browser test" verbose="1">
+<suite name="Multi browser test" parallel="tests" thread-count="5" verbose="1">
 
-<!--    <test name="Chrome execution">-->
-<!--        <parameter name="browser" value="chrome"/>-->
-<!--        <classes>-->
-<!--            <class name="HotelSearchTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Chrome execution">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="HotelSearchTest"/>
+        </classes>
+    </test>
 
     <test name="Firefox Execution">
         <parameter name="browser" value="firefox"/>

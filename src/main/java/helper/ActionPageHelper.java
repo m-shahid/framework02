@@ -20,7 +20,16 @@ public class ActionPageHelper {
 
     public void click(WebElement element){
         try{
+            waitForElementToBeClickable(element);
             element.click();
+        }catch(Exception e){
+            throw new ElementException(e.getMessage());
+        }
+    }
+
+    public String getText(WebElement element){
+        try{
+            return element.getText();
         }catch(Exception e){
             throw new ElementException(e.getMessage());
         }
@@ -37,6 +46,14 @@ public class ActionPageHelper {
     public void waitForElementToBePresent(By locator){
         try{
             wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        }catch(Exception e){
+            throw new ElementException(e.getMessage());
+        }
+    }
+
+    public void waitForElementToBeClickable(WebElement element){
+        try{
+            wait.until(ExpectedConditions.elementToBeClickable(element));
         }catch(Exception e){
             throw new ElementException(e.getMessage());
         }

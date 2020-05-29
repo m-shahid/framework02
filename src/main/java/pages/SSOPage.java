@@ -1,5 +1,6 @@
 package pages;
 
+import logger.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -54,7 +55,7 @@ public class SSOPage extends BasePage {
     }
 
     private void findAndClickElement(List<WebElement> elements, String elementText){
-        act.sleep(2000);
+        act.sleep(1000);
         for(WebElement element : elements){
             if(element.getText().contains(elementText)){
                 act.click(element);
@@ -66,40 +67,47 @@ public class SSOPage extends BasePage {
     public SSOPage selectEnvironment(String environment){
         act.click(environmentDropDown);
         findAndClickElement(environments, environment);
+        Logger.info("User has selected " + environment + " environment");
         return this;
     }
 
     public SSOPage selectClient(String client){
         act.click(clientDropDown);
         findAndClickElement(clients, client);
+        Logger.info("User has selected " + client + " client");
         return this;
     }
 
     public SSOPage selectProgram(String program){
         act.click(programDropDown);
         findAndClickElement(programs, program);
+        Logger.info("User has selected " + program + " program");
         return this;
     }
 
     public SSOPage selectSite(String site){
         act.click(sitesDropDown);
         findAndClickElement(sites, site);
+        Logger.info("User has selected " + site + " site");
         return this;
     }
 
     public SSOPage selectCulture(String culture){
         act.click(cultureDropDown);
         findAndClickElement(cultures, culture);
+        Logger.info("User has selected " + culture + " culture");
         return this;
     }
 
     public SSOPage typePointBalance(String pointBalanceValue){
         act.type(pointBalanceTextBox, pointBalanceValue);
+        Logger.info("User has entered " + pointBalanceValue + " point balance");
         return this;
     }
 
     public HomePage submit(){
         act.click(goButton);
+        Logger.info("User has clicked on go button");
         return PageFactoryProvider.getHomePage();
     }
 }

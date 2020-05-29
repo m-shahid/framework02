@@ -1,6 +1,5 @@
 package pages;
 
-import java.util.concurrent.ExecutionException;
 
 public class PageFactoryProvider {
 
@@ -12,24 +11,18 @@ public class PageFactoryProvider {
     }
 
     public static SSOPage getSSOPage(){
-        if(ssoPage == null){
-            ssoPage = new SSOPage();
-        }
-        return ssoPage;
+        PageManager.setSSOPage(new SSOPage());
+        return PageManager.getSSOPage();
     }
 
     public static HomePage getHomePage(){
-        if(homePage == null){
-            homePage = new HomePage();
-        }
-        return homePage;
+        PageManager.setHomePage(new HomePage());
+        return PageManager.getHomePage();
     }
 
     public static HotelSearchResultPage getHotelSearchResultPage(){
-        if(hotelSearchResultPage == null){
-            hotelSearchResultPage = new HotelSearchResultPage();
-        }
-        return hotelSearchResultPage;
+        PageManager.setHotelSearchResultPage(new HotelSearchResultPage());
+        return PageManager.getHotelSearchResultPage();
     }
 
 }
