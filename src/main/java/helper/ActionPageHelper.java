@@ -4,16 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.FluentWait;
 
 import java.util.List;
 
 public class ActionPageHelper {
 
     private WebDriver driver;
-    private WebDriverWait wait;
+    private FluentWait<WebDriver> wait;
 
-    public ActionPageHelper(WebDriver driver, WebDriverWait wait){
+    public ActionPageHelper(WebDriver driver, FluentWait<WebDriver> wait){
         this.driver = driver;
         this.wait = wait;
     }

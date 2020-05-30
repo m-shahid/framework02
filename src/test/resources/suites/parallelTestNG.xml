@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Multi browser test" parallel="methods" thread-count="2" verbose="1">
 
-        <test name="Hotel search for LAS">
+        <test name="Hotel search Test">
             <parameter name="browser" value="chrome"/>
             <classes>
                 <class name="HotelSearchTest"/>
