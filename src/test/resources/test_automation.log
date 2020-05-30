@@ -906,3 +906,268 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] 2020-05-30 00:55:37.244 [TestNG-test=Hotel search for LAS-2] Logger - Hotel search result page is displayed.
 [INFO ] 2020-05-30 00:55:37.245 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
 [INFO ] 2020-05-30 00:55:38.037 [main] Logger - Closing driver instance.
+[INFO ] 2020-05-30 00:57:41.025 [TestNG-test=Hotel search for LAS-2] Logger - =========================================================
+[INFO ] 2020-05-30 00:57:41.025 [TestNG-test=Hotel search for LAS-1] Logger - =========================================================
+[INFO ] 2020-05-30 00:57:41.043 [TestNG-test=Hotel search for LAS-2] Logger - Starting new test...
+[INFO ] 2020-05-30 00:57:41.043 [TestNG-test=Hotel search for LAS-1] Logger - Starting new test...
+[INFO ] 2020-05-30 00:57:41.043 [TestNG-test=Hotel search for LAS-1] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 00:57:41.043 [TestNG-test=Hotel search for LAS-2] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 00:57:41.050 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 00:57:41.050 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 00:57:41.161 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing remote configuration.
+[INFO ] 2020-05-30 00:57:41.161 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing remote configuration.
+[INFO ] 2020-05-30 00:57:41.188 [TestNG-test=Hotel search for LAS-2] Logger - Creating remote chrome driver
+[INFO ] 2020-05-30 00:57:41.188 [TestNG-test=Hotel search for LAS-1] Logger - Creating remote chrome driver
+[INFO ] 2020-05-30 00:57:48.243 [TestNG-test=Hotel search for LAS-2] Logger - Remote driver instance is created.
+[ERROR] 2020-05-30 00:58:16.445 [TestNG-test=Hotel search for LAS-2] Logger - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAVLAPT568', ip: '10.64.97.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\ssayyad\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 25af9fcf4c2a629256e1489a41b...}
+Session ID: 25af9fcf4c2a629256e1489a41bf6660
+*** Element info: {Using=xpath, value=(//*[@class='btn dropdown-toggle selectpicker btn-default'])[4]}
+[ERROR] 2020-05-30 00:58:16.446 [TestNG-test=Hotel search for LAS-2] Logger - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAVLAPT568', ip: '10.64.97.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\ssayyad\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54196}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 25af9fcf4c2a629256e1489a41b...}
+Session ID: 25af9fcf4c2a629256e1489a41bf6660
+*** Element info: {Using=xpath, value=(//*[@class='btn dropdown-toggle selectpicker btn-default'])[4]}
+[INFO ] 2020-05-30 00:58:16.477 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
+[ERROR] 2020-05-30 00:58:28.290 [TestNG-test=Hotel search for LAS-1] Logger - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAVLAPT568', ip: '10.64.97.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: RemoteDriver
+[INFO ] 2020-05-30 00:58:28.294 [TestNG-test=Hotel search for LAS-1] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:19:38.449 [main] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:19:38.470 [main] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:20:04.802 [TestNG-test=Hotel search for LAS-1] Logger - =========================================================
+[INFO ] 2020-05-30 09:20:04.802 [TestNG-test=Hotel search for LAS-2] Logger - =========================================================
+[INFO ] 2020-05-30 09:20:04.816 [TestNG-test=Hotel search for LAS-1] Logger - Starting new test...
+[INFO ] 2020-05-30 09:20:04.816 [TestNG-test=Hotel search for LAS-2] Logger - Starting new test...
+[INFO ] 2020-05-30 09:20:04.817 [TestNG-test=Hotel search for LAS-1] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 09:20:04.817 [TestNG-test=Hotel search for LAS-2] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 09:20:04.827 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 09:20:04.827 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 09:20:04.985 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing remote configuration.
+[INFO ] 2020-05-30 09:20:04.985 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing remote configuration.
+[INFO ] 2020-05-30 09:20:05.014 [TestNG-test=Hotel search for LAS-2] Logger - Creating remote chrome driver
+[INFO ] 2020-05-30 09:20:05.014 [TestNG-test=Hotel search for LAS-1] Logger - Creating remote chrome driver
+[INFO ] 2020-05-30 09:20:13.022 [TestNG-test=Hotel search for LAS-1] Logger - Remote driver instance is created.
+[INFO ] 2020-05-30 09:20:13.022 [TestNG-test=Hotel search for LAS-2] Logger - Remote driver instance is created.
+[INFO ] 2020-05-30 09:20:30.966 [TestNG-test=Hotel search for LAS-1] Logger - User has selected SG environment
+[INFO ] 2020-05-30 09:20:31.158 [TestNG-test=Hotel search for LAS-2] Logger - User has selected SG environment
+[ERROR] 2020-05-30 09:20:51.506 [TestNG-test=Hotel search for LAS-1] Logger - Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: chrome on WINDOWS (6ac417e94c797976995f26bf9a23ceb9)] -> xpath: (//*[@class='btn dropdown-toggle selectpicker btn-default'])[5]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAVLAPT568', ip: '10.64.97.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\ssayyad\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac417e94c797976995f26bf9a2...}
+Session ID: 6ac417e94c797976995f26bf9a23ceb9
+[ERROR] 2020-05-30 09:20:51.506 [TestNG-test=Hotel search for LAS-1] Logger - Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: chrome on WINDOWS (6ac417e94c797976995f26bf9a23ceb9)] -> xpath: (//*[@class='btn dropdown-toggle selectpicker btn-default'])[5]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAVLAPT568', ip: '10.64.97.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\ssayyad\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac417e94c797976995f26bf9a2...}
+Session ID: 6ac417e94c797976995f26bf9a23ceb9
+[ERROR] 2020-05-30 09:20:51.513 [TestNG-test=Hotel search for LAS-2] Logger - Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: chrome on WINDOWS (6ac417e94c797976995f26bf9a23ceb9)] -> xpath: (//*[@class='btn dropdown-toggle selectpicker btn-default'])[5]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAVLAPT568', ip: '10.64.97.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\ssayyad\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac417e94c797976995f26bf9a2...}
+Session ID: 6ac417e94c797976995f26bf9a23ceb9
+[ERROR] 2020-05-30 09:20:51.513 [TestNG-test=Hotel search for LAS-2] Logger - Expected condition failed: waiting for element to be clickable: [[RemoteWebDriver: chrome on WINDOWS (6ac417e94c797976995f26bf9a23ceb9)] -> xpath: (//*[@class='btn dropdown-toggle selectpicker btn-default'])[5]] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TAVLAPT568', ip: '10.64.97.178', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\ssayyad\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 6ac417e94c797976995f26bf9a2...}
+Session ID: 6ac417e94c797976995f26bf9a23ceb9
+[INFO ] 2020-05-30 09:20:51.516 [TestNG-test=Hotel search for LAS-1] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:20:51.516 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:23:22.189 [TestNG-test=Hotel search for LAS-2] Logger - =========================================================
+[INFO ] 2020-05-30 09:23:22.189 [TestNG-test=Hotel search for LAS-1] Logger - =========================================================
+[INFO ] 2020-05-30 09:23:22.217 [TestNG-test=Hotel search for LAS-1] Logger - Starting new test...
+[INFO ] 2020-05-30 09:23:22.217 [TestNG-test=Hotel search for LAS-2] Logger - Starting new test...
+[INFO ] 2020-05-30 09:23:22.218 [TestNG-test=Hotel search for LAS-1] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 09:23:22.218 [TestNG-test=Hotel search for LAS-2] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 09:23:22.229 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 09:23:22.229 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 09:23:22.423 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing remote configuration.
+[INFO ] 2020-05-30 09:23:22.423 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing remote configuration.
+[INFO ] 2020-05-30 09:23:22.480 [TestNG-test=Hotel search for LAS-2] Logger - Creating remote chrome driver
+[INFO ] 2020-05-30 09:23:22.480 [TestNG-test=Hotel search for LAS-1] Logger - Creating remote chrome driver
+[INFO ] 2020-05-30 09:23:32.507 [TestNG-test=Hotel search for LAS-2] Logger - Remote driver instance is created.
+[INFO ] 2020-05-30 09:23:34.525 [TestNG-test=Hotel search for LAS-1] Logger - Remote driver instance is created.
+[INFO ] 2020-05-30 09:23:48.853 [TestNG-test=Hotel search for LAS-2] Logger - User has selected SG environment
+[INFO ] 2020-05-30 09:23:49.433 [TestNG-test=Hotel search for LAS-1] Logger - User has selected SG environment
+[INFO ] 2020-05-30 09:24:00.543 [TestNG-test=Hotel search for LAS-2] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 09:24:01.465 [TestNG-test=Hotel search for LAS-1] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 09:24:04.598 [TestNG-test=Hotel search for LAS-1] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 09:24:05.829 [TestNG-test=Hotel search for LAS-2] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 09:24:06.929 [TestNG-test=Hotel search for LAS-1] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 09:24:08.113 [TestNG-test=Hotel search for LAS-2] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 09:24:09.281 [TestNG-test=Hotel search for LAS-1] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 09:24:09.759 [TestNG-test=Hotel search for LAS-1] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 09:24:10.232 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on go button
+[INFO ] 2020-05-30 09:24:10.538 [TestNG-test=Hotel search for LAS-2] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 09:24:10.930 [TestNG-test=Hotel search for LAS-2] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 09:24:11.299 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on go button
+[INFO ] 2020-05-30 09:25:40.395 [TestNG-test=Hotel search for LAS-1] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 09:25:40.653 [TestNG-test=Hotel search for LAS-1] Logger - User has entered LAS destination.
+[INFO ] 2020-05-30 09:25:40.979 [TestNG-test=Hotel search for LAS-2] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 09:25:41.307 [TestNG-test=Hotel search for LAS-2] Logger - User has entered SFO destination.
+[INFO ] 2020-05-30 09:25:41.982 [TestNG-test=Hotel search for LAS-1] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 09:25:42.710 [TestNG-test=Hotel search for LAS-2] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 09:25:48.195 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 09:25:48.532 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 09:25:48.915 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 09:25:48.946 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 09:25:49.166 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 09:25:49.506 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 09:26:18.392 [TestNG-test=Hotel search for LAS-1] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 09:26:18.401 [TestNG-test=Hotel search for LAS-1] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:26:21.186 [TestNG-test=Hotel search for LAS-2] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 09:26:21.188 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:28:00.446 [TestNG-test=Hotel search for LAS-1] Logger - =========================================================
+[INFO ] 2020-05-30 09:28:00.446 [TestNG-test=Hotel search for LAS-2] Logger - =========================================================
+[INFO ] 2020-05-30 09:28:00.465 [TestNG-test=Hotel search for LAS-1] Logger - Starting new test...
+[INFO ] 2020-05-30 09:28:00.465 [TestNG-test=Hotel search for LAS-2] Logger - Starting new test...
+[INFO ] 2020-05-30 09:28:00.466 [TestNG-test=Hotel search for LAS-2] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 09:28:00.466 [TestNG-test=Hotel search for LAS-1] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 09:28:00.472 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 09:28:00.472 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 09:28:00.585 [TestNG-test=Hotel search for LAS-2] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 09:28:00.586 [TestNG-test=Hotel search for LAS-1] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 09:28:07.151 [TestNG-test=Hotel search for LAS-1] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 09:28:07.560 [TestNG-test=Hotel search for LAS-2] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 09:28:22.962 [TestNG-test=Hotel search for LAS-2] Logger - User has selected SG environment
+[INFO ] 2020-05-30 09:28:24.907 [TestNG-test=Hotel search for LAS-1] Logger - User has selected SG environment
+[INFO ] 2020-05-30 09:28:27.130 [TestNG-test=Hotel search for LAS-2] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 09:28:28.995 [TestNG-test=Hotel search for LAS-1] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 09:28:29.204 [TestNG-test=Hotel search for LAS-2] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 09:28:30.928 [TestNG-test=Hotel search for LAS-1] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 09:28:31.049 [TestNG-test=Hotel search for LAS-2] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 09:28:32.654 [TestNG-test=Hotel search for LAS-1] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 09:28:32.740 [TestNG-test=Hotel search for LAS-2] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 09:28:33.094 [TestNG-test=Hotel search for LAS-2] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 09:28:33.320 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on go button
+[INFO ] 2020-05-30 09:28:34.344 [TestNG-test=Hotel search for LAS-1] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 09:28:34.620 [TestNG-test=Hotel search for LAS-1] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 09:28:34.846 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on go button
+[INFO ] 2020-05-30 09:28:54.882 [TestNG-test=Hotel search for LAS-1] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 09:28:55.178 [TestNG-test=Hotel search for LAS-1] Logger - User has entered LAS destination.
+[INFO ] 2020-05-30 09:28:55.335 [TestNG-test=Hotel search for LAS-2] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 09:28:55.603 [TestNG-test=Hotel search for LAS-2] Logger - User has entered SFO destination.
+[INFO ] 2020-05-30 09:28:56.239 [TestNG-test=Hotel search for LAS-1] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 09:28:56.665 [TestNG-test=Hotel search for LAS-2] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 09:29:01.922 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 09:29:02.187 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 09:29:02.331 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 09:29:02.590 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 09:29:02.648 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 09:29:02.930 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 09:29:22.709 [TestNG-test=Hotel search for LAS-1] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 09:29:22.720 [TestNG-test=Hotel search for LAS-1] Logger - Closing browser instance.
+[INFO ] 2020-05-30 09:29:27.378 [TestNG-test=Hotel search for LAS-2] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 09:29:27.380 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
+[INFO ] 2020-05-30 10:36:11.818 [TestNG-test=Hotel search for LAS-2] Logger - =========================================================
+[INFO ] 2020-05-30 10:36:11.818 [TestNG-test=Hotel search for LAS-1] Logger - =========================================================
+[INFO ] 2020-05-30 10:36:11.834 [TestNG-test=Hotel search for LAS-1] Logger - Starting new test...
+[INFO ] 2020-05-30 10:36:11.834 [TestNG-test=Hotel search for LAS-2] Logger - Starting new test...
+[INFO ] 2020-05-30 10:36:11.835 [TestNG-test=Hotel search for LAS-1] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 10:36:11.835 [TestNG-test=Hotel search for LAS-2] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 10:36:11.841 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 10:36:11.841 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 10:36:11.950 [TestNG-test=Hotel search for LAS-1] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 10:36:11.950 [TestNG-test=Hotel search for LAS-2] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 10:36:18.537 [TestNG-test=Hotel search for LAS-1] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 10:36:18.789 [TestNG-test=Hotel search for LAS-2] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 10:36:27.000 [TestNG-test=Hotel search for LAS-2] Logger - User has selected SG environment
+[INFO ] 2020-05-30 10:36:31.196 [TestNG-test=Hotel search for LAS-1] Logger - User has selected SG environment
+[INFO ] 2020-05-30 10:36:31.878 [TestNG-test=Hotel search for LAS-2] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 10:36:33.761 [TestNG-test=Hotel search for LAS-2] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 10:36:35.328 [TestNG-test=Hotel search for LAS-2] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 10:36:36.333 [TestNG-test=Hotel search for LAS-1] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 10:36:36.974 [TestNG-test=Hotel search for LAS-2] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 10:36:37.205 [TestNG-test=Hotel search for LAS-2] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 10:36:37.405 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on go button
+[INFO ] 2020-05-30 10:36:38.132 [TestNG-test=Hotel search for LAS-1] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 10:36:39.763 [TestNG-test=Hotel search for LAS-1] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 10:36:41.422 [TestNG-test=Hotel search for LAS-1] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 10:36:41.603 [TestNG-test=Hotel search for LAS-1] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 10:36:41.785 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on go button
+[INFO ] 2020-05-30 10:36:57.301 [TestNG-test=Hotel search for LAS-1] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 10:36:57.708 [TestNG-test=Hotel search for LAS-1] Logger - User has entered LAS destination.
+[INFO ] 2020-05-30 10:36:58.815 [TestNG-test=Hotel search for LAS-1] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 10:37:03.097 [TestNG-test=Hotel search for LAS-2] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 10:37:03.562 [TestNG-test=Hotel search for LAS-2] Logger - User has entered SFO destination.
+[INFO ] 2020-05-30 10:37:04.557 [TestNG-test=Hotel search for LAS-2] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 10:37:04.940 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 10:37:05.316 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 10:37:05.684 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 10:37:09.168 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 10:37:09.472 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 10:37:09.801 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 10:37:25.976 [TestNG-test=Hotel search for LAS-1] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 10:37:25.982 [TestNG-test=Hotel search for LAS-1] Logger - Closing browser instance.
+[INFO ] 2020-05-30 10:37:31.271 [TestNG-test=Hotel search for LAS-2] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 10:37:31.273 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
+[INFO ] 2020-05-30 17:48:08.957 [TestNG-test=Hotel search for LAS-2] Logger - =========================================================
+[INFO ] 2020-05-30 17:48:08.957 [TestNG-test=Hotel search for LAS-1] Logger - =========================================================
+[INFO ] 2020-05-30 17:48:08.964 [TestNG-test=Hotel search for LAS-2] Logger - Starting new test...
+[INFO ] 2020-05-30 17:48:08.964 [TestNG-test=Hotel search for LAS-1] Logger - Starting new test...
+[INFO ] 2020-05-30 17:48:08.964 [TestNG-test=Hotel search for LAS-2] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 17:48:08.964 [TestNG-test=Hotel search for LAS-1] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 17:48:08.967 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 17:48:08.967 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 17:48:09.013 [TestNG-test=Hotel search for LAS-1] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 17:48:09.013 [TestNG-test=Hotel search for LAS-2] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 17:48:14.996 [TestNG-test=Hotel search for LAS-2] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 17:48:14.996 [TestNG-test=Hotel search for LAS-1] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 17:48:35.401 [TestNG-test=Hotel search for LAS-1] Logger - Closing browser instance.
+[INFO ] 2020-05-30 17:48:39.389 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
+[INFO ] 2020-05-30 20:07:30.043 [TestNG-test=Hotel search for LAS-1] Logger - =========================================================
+[INFO ] 2020-05-30 20:07:30.043 [TestNG-test=Hotel search for LAS-2] Logger - =========================================================
+[INFO ] 2020-05-30 20:07:30.049 [TestNG-test=Hotel search for LAS-2] Logger - Starting new test...
+[INFO ] 2020-05-30 20:07:30.049 [TestNG-test=Hotel search for LAS-1] Logger - Starting new test...
+[INFO ] 2020-05-30 20:07:30.049 [TestNG-test=Hotel search for LAS-2] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 20:07:30.049 [TestNG-test=Hotel search for LAS-1] Logger - Creating driver using chrome browser
+[INFO ] 2020-05-30 20:07:30.053 [TestNG-test=Hotel search for LAS-2] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 20:07:30.053 [TestNG-test=Hotel search for LAS-1] Logger - Deserializing app configuration.
+[INFO ] 2020-05-30 20:07:30.097 [TestNG-test=Hotel search for LAS-2] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 20:07:30.097 [TestNG-test=Hotel search for LAS-1] Logger - Creating local chrome driver
+[INFO ] 2020-05-30 20:07:35.812 [TestNG-test=Hotel search for LAS-2] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 20:07:37.718 [TestNG-test=Hotel search for LAS-1] Logger - Local driver instance is created.
+[INFO ] 2020-05-30 20:07:44.623 [TestNG-test=Hotel search for LAS-1] Logger - User has selected SG environment
+[INFO ] 2020-05-30 20:07:47.031 [TestNG-test=Hotel search for LAS-2] Logger - User has selected SG environment
+[INFO ] 2020-05-30 20:07:47.840 [TestNG-test=Hotel search for LAS-1] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 20:07:49.868 [TestNG-test=Hotel search for LAS-1] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 20:07:50.824 [TestNG-test=Hotel search for LAS-2] Logger - User has selected ORXeC Demo client
+[INFO ] 2020-05-30 20:07:51.463 [TestNG-test=Hotel search for LAS-1] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 20:07:52.812 [TestNG-test=Hotel search for LAS-2] Logger - User has selected 1371 program
+[INFO ] 2020-05-30 20:07:52.913 [TestNG-test=Hotel search for LAS-1] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 20:07:53.142 [TestNG-test=Hotel search for LAS-1] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 20:07:53.358 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on go button
+[INFO ] 2020-05-30 20:07:54.722 [TestNG-test=Hotel search for LAS-2] Logger - User has selected BaseResponsive site
+[INFO ] 2020-05-30 20:07:56.643 [TestNG-test=Hotel search for LAS-2] Logger - User has selected English (United States) culture
+[INFO ] 2020-05-30 20:07:57.143 [TestNG-test=Hotel search for LAS-2] Logger - User has entered 60000 point balance
+[INFO ] 2020-05-30 20:07:57.505 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on go button
+[INFO ] 2020-05-30 20:09:03.368 [TestNG-test=Hotel search for LAS-2] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 20:09:03.593 [TestNG-test=Hotel search for LAS-2] Logger - User has entered SFO destination.
+[INFO ] 2020-05-30 20:09:04.917 [TestNG-test=Hotel search for LAS-2] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 20:09:09.435 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 20:09:09.657 [TestNG-test=Hotel search for LAS-2] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 20:09:09.960 [TestNG-test=Hotel search for LAS-2] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 20:09:16.685 [TestNG-test=Hotel search for LAS-1] Logger - User has navigated to hotel search page.
+[INFO ] 2020-05-30 20:09:16.887 [TestNG-test=Hotel search for LAS-1] Logger - User has entered LAS destination.
+[INFO ] 2020-05-30 20:09:17.809 [TestNG-test=Hotel search for LAS-1] Logger - User has selected first destination from dropdown.
+[INFO ] 2020-05-30 20:09:21.531 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check in date as : Aug 28
+[INFO ] 2020-05-30 20:09:21.772 [TestNG-test=Hotel search for LAS-1] Logger - User has selected check out date as : Aug 30
+[INFO ] 2020-05-30 20:09:22.082 [TestNG-test=Hotel search for LAS-1] Logger - User has clicked on hotel search button.
+[INFO ] 2020-05-30 20:09:36.438 [TestNG-test=Hotel search for LAS-2] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 20:09:36.443 [TestNG-test=Hotel search for LAS-2] Logger - Closing browser instance.
+[INFO ] 2020-05-30 20:09:37.460 [TestNG-test=Hotel search for LAS-1] Logger - Hotel search result page is displayed.
+[INFO ] 2020-05-30 20:09:37.462 [TestNG-test=Hotel search for LAS-1] Logger - Closing browser instance.
