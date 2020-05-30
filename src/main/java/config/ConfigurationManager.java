@@ -29,7 +29,7 @@ public class ConfigurationManager {
 
     public static AppConfig getAppConfig(){
         if(appConfig == null){
-            Logger.info("Deserializing app configuration.");
+            Logger.debug("Deserializing app configuration.");
             String appConfigJsonPath = System.getProperty("user.dir") + "\\src\\test\\resources\\configuration\\appConfig.json";
             appConfig = new Gson().fromJson(getConfigurationJson(appConfigJsonPath), AppConfig.class);
         }
@@ -45,13 +45,13 @@ public class ConfigurationManager {
 
         switch (target){
             case "local" :
-                Logger.info("Deserializing local configuration.");
+                Logger.debug("Deserializing local configuration.");
                 String localConfigJsonPath = System.getProperty("user.dir") + "\\src\\test\\resources\\configuration\\local.json";
                 configuration = new Gson().fromJson(getConfigurationJson(localConfigJsonPath), LocalConfig.class);
                 break;
 
             case "remote":
-                Logger.info("Deserializing remote configuration.");
+                Logger.debug("Deserializing remote configuration.");
                 String remoteConfigJsonPath = System.getProperty("user.dir") + "\\src\\test\\resources\\configuration\\remote.json";
                 configuration = new Gson().fromJson(getConfigurationJson(remoteConfigJsonPath), RemoteConfig.class);
                 break;

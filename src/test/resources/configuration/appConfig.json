@@ -1,4 +1,5 @@
 {
   "target" : "local",
-  "applicationBaseUrl" : "http://cltsenvironments.loyaltytravelservices.com/SSOSimulator/"
+  "applicationBaseUrl" : "http://cltsenvironments.loyaltytravelservices.com/SSOSimulator/",
+  "onlyFailedTestScreenshot" : true
 }

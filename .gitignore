@@ -17,3 +17,9 @@ target/
 
 # TestNG
 test-output/
+
+#log4j logs
+src/test/resources/test_automation.log
+
+#allure
+.allure

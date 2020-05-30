@@ -29,11 +29,11 @@ public class RemoteDriver implements IDriver {
 
         switch (browser.toLowerCase()){
             case "chrome":
-                Logger.info("Creating remote chrome driver");
+                Logger.debug("Creating remote chrome driver");
                 return DesiredCapabilities.chrome();
 
             case "firefox":
-                Logger.info("Creating remote firefox driver");
+                Logger.debug("Creating remote firefox driver");
                 return DesiredCapabilities.firefox();
         }
         return null;
