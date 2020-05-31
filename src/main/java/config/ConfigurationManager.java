@@ -1,16 +1,11 @@
 package config;
 
-import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.google.gson.stream.JsonReader;
 import config.pojo.*;
 import helper.Deserialize;
-import helper.ElementException;
+import helper.DriverException;
 import logger.Logger;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.lang.reflect.Type;
 import java.util.LinkedList;
 import java.util.List;
@@ -54,7 +49,7 @@ public class ConfigurationManager {
                 }
             }
         }
-        throw new ElementException("Client configuration not found");
+        throw new DriverException("Client configuration not found");
     }
 
     public static Program getProgram(){
@@ -67,7 +62,7 @@ public class ConfigurationManager {
                 }
             }
         }
-        throw new ElementException("Program configuration not found");
+        throw new DriverException("Program configuration not found");
     }
 
     public static IConfiguration getConfiguration(){

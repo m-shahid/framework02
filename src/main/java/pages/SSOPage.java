@@ -56,7 +56,7 @@ public class SSOPage extends BasePage {
     }
 
     private void findAndClickElement(List<WebElement> elements, String elementText){
-        act.sleep(1000);
+        act.sleep(2000);
         for(WebElement element : elements){
             if(element.getText().contains(elementText)){
                 act.click(element);

@@ -33,7 +33,7 @@ public class Deserialize {
             BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
             return new JsonReader(bufferedReader);
         } catch (FileNotFoundException e) {
-            throw new ElementException(e.getMessage());
+            throw new DriverException(e.getMessage());
         }
     }
 }

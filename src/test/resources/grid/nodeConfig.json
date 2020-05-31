@@ -24,7 +24,7 @@
   "port": -1,
   "register": true,
   "registerCycle": 5000,
-  "hub": "http://10.64.97.65:4444",
+  "hub": "http://localhost:4444",
   "nodeStatusCheckTimeout": 5000,
   "nodePolling": 5000,
   "role": "node",

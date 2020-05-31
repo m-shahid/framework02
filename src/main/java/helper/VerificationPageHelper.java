@@ -18,18 +18,10 @@ public class VerificationPageHelper {
     }
 
     public void pageTitle(String pageTitle){
-        try{
-            Assert.assertTrue(driver.getTitle().equalsIgnoreCase(pageTitle));
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        Assert.assertTrue(driver.getTitle().equalsIgnoreCase(pageTitle));
     }
 
     public void isAt(WebElement element){
-        try{
-            Assert.assertTrue(element.isDisplayed());
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        Assert.assertTrue(element.isDisplayed());
     }
 }

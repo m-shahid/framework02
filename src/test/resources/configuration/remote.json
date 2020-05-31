@@ -1,5 +1,5 @@
 {
   "browser" : "chrome",
-  "gridUrl" : "10.64.97.65",
+  "gridUrl" : "localhost",
   "gridPort" : "4444"
 }

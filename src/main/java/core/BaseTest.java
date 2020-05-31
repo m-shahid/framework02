@@ -11,6 +11,7 @@ import report.AllureReportManager;
 import java.util.concurrent.TimeUnit;
 
 
+@Listeners({TestListener.class})
 public class BaseTest {
 
     @BeforeSuite

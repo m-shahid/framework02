@@ -19,52 +19,28 @@ public class ActionPageHelper {
     }
 
     public void click(WebElement element){
-        try{
-            waitForElementToBeClickable(element);
-            element.click();
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        waitForElementToBeClickable(element);
+        element.click();
     }
 
     public String getText(WebElement element){
-        try{
-            return element.getText();
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        return element.getText();
     }
 
     public void type(WebElement element, String text){
-        try{
-            element.sendKeys(text);
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        element.sendKeys(text);
     }
 
     public void waitForElementToBePresent(By locator){
-        try{
-            wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
     public void waitForElementToBeClickable(WebElement element){
-        try{
-            wait.until(ExpectedConditions.elementToBeClickable(element));
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public void waitForAllElementsToBeVisible(List<WebElement> elements){
-        try{
-            wait.until(ExpectedConditions.visibilityOfAllElements(elements));
-        }catch(Exception e){
-            throw new ElementException(e.getMessage());
-        }
+        wait.until(ExpectedConditions.visibilityOfAllElements(elements));
     }
 
     public void sleep(int timeoutInMilliSecond){

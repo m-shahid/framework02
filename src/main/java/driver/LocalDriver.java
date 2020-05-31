@@ -1,5 +1,6 @@
 package driver;
 
+import helper.DriverException;
 import logger.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -23,7 +24,7 @@ public class LocalDriver implements IDriver {
 
             default:
                 System.out.println("browser name not valid");
-                return null;
+                throw new DriverException("Browser name not valid");
         }
     }
 }

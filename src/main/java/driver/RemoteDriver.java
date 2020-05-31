@@ -2,7 +2,7 @@ package driver;
 
 import config.ConfigurationManager;
 import config.IConfiguration;
-import helper.ElementException;
+import helper.DriverException;
 import logger.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -20,7 +20,7 @@ public class RemoteDriver implements IDriver {
             String gridUrl = String.format("http://%s:%s/wd/hub", configuration.getGridUrl(), configuration.getGridPort());
             driver = new RemoteWebDriver(new URL(gridUrl), getCapabilities(browser));
         }catch(Exception e){
-            throw new ElementException(e.getMessage());
+            throw new DriverException(e.getMessage());
         }
         return driver;
     }
@@ -36,6 +36,6 @@ public class RemoteDriver implements IDriver {
                 Logger.debug("Creating remote firefox driver");
                 return DesiredCapabilities.firefox();
         }
-        return null;
+        throw new DriverException("Can not get capabilities since browser name not valid");
     }
 }
