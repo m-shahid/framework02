@@ -1,4 +1,6 @@
-package config;
+package config.pojo;
+
+import config.IConfiguration;
 
 public class RemoteConfig implements IConfiguration {
 

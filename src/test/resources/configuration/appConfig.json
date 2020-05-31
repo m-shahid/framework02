@@ -1,5 +1,8 @@
 {
-  "target" : "local",
+  "target" : "remote",
+  "uiEnvironment" : "SG",
+  "nextgenEnvironment" : "Stage",
+  "programId" : "1371",
   "applicationBaseUrl" : "http://cltsenvironments.loyaltytravelservices.com/SSOSimulator/",
   "onlyFailedTestScreenshot" : true
 }

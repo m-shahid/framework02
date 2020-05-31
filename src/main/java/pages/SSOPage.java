@@ -1,5 +1,6 @@
 package pages;
 
+import config.ConfigurationManager;
 import logger.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,13 +45,13 @@ public class SSOPage extends BasePage {
     @FindBy(xpath = "//*[@class='btn btn-primary']")
     private WebElement goButton;
 
-    public HomePage loadSSOConfiguration(String environment, String client, String program, String site, String culture, String pointBalance) {
-        return selectEnvironment(environment)
-                .selectClient(client)
-                .selectProgram(program)
-                .selectSite(site)
-                .selectCulture(culture)
-                .typePointBalance(pointBalance)
+    public HomePage loadSSOConfiguration() {
+        return selectEnvironment(ConfigurationManager.getAppConfig().getUiEnvironment())
+                .selectClient(ConfigurationManager.getClient().getName())
+                .selectProgram(ConfigurationManager.getProgram().getId())
+                .selectSite(ConfigurationManager.getClient().getDefaultSite())
+                .selectCulture(ConfigurationManager.getClient().getDefaultCulture())
+                .typePointBalance("600000")
                 .submit();
     }
 

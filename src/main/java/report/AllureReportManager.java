@@ -2,9 +2,8 @@ package report;
 
 import com.github.automatedowl.tools.AllureEnvironmentWriter;
 import com.google.common.collect.ImmutableMap;
-import config.AppConfig;
+import config.pojo.AppConfig;
 import config.ConfigurationManager;
-import config.IConfiguration;
 import driver.DriverManager;
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;

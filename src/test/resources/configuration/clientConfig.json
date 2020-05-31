@@ -1,0 +1,19 @@
+[
+  {
+    "name" : "ORXeC Demo",
+    "defaultSite" : "BaseResponsive",
+    "defaultCulture": "English (United States)",
+    "programs": [
+      {
+        "id" : "1371",
+        "site": "",
+        "culture": ""
+      },
+      {
+        "id" : "1372",
+        "site": "",
+        "culture": ""
+      }
+    ]
+  }
+]

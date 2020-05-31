@@ -22,6 +22,7 @@ public class Logger {
 
     @Step("{0}")
     public static void error(String message) {
+        AllureReportManager.takeAndAttachScreenshot();
         log.error(message);
     }
 
